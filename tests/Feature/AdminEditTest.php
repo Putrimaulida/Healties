@@ -5,20 +5,17 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class LoginTest extends TestCase
+class AdminEditTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function test_login()
+    public function test_edit()
     {
-        //setup
-        //do somiting
-        $response = $this->get('/');
-        //assert
+        $response = $this->get('/admin/ubah_password');
+
         $response->assertStatus(200);
-        $response->assertSeeText("E-mail");
     }
 }

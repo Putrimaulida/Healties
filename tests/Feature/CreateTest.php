@@ -17,6 +17,7 @@ class CreateTest extends TestCase
         $response = $this->get('/admin/pasien/create');
 
         $response->assertStatus(200);
+        $response->assertSeeText("");
     }
     protected function CreateTest(): void{
 

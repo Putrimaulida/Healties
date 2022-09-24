@@ -5,17 +5,17 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class EditTest extends TestCase
+class AdminExportTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function test_edit()
+    public function test_export()
     {
-        $response = $this->get('/admin/ubah_password');
+        $response = $this->get('/admin/pasien/export');
 
-        $response->assertStatus(200);
+        $response->assertStatus(302);
     }
 }
